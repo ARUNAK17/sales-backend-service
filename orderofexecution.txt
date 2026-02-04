@@ -1,0 +1,14 @@
+Project setup (venv, requirements)
+Models
+DB base + async connection
+Alembic setup
+Initial migration
+Schemas (Pydantic)
+Auth & security (JWT, RBAC)
+Core CRUD services
+API routes
+Analytics queries
+Audit logging
+Caching (Redis)
+Testing
+Deployment
