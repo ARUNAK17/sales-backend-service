@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env
+
+# Git
+.git
+.gitignore
+
+# Tests & local junk
+.pytest_cache/
+tests/
+test.db
+requirements_old.txt
