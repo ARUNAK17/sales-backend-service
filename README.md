@@ -6,19 +6,23 @@ This project is designed as a **realistic backend portfolio project**, following
 
 ---
 
-## 🚀 Live Deployment
+##  Live Deployment
 
 * **API Base URL**: [https://sales-backend-service.onrender.com](https://sales-backend-service.onrender.com)
 * **Swagger UI**: [https://sales-backend-service.onrender.com/docs](https://sales-backend-service.onrender.com/docs)
 * **ReDoc**: [https://sales-backend-service.onrender.com/redoc](https://sales-backend-service.onrender.com/redoc)
 
+* **use this** to authorize as admin in swagger UI and play with the API features.
+  user= ceo@company.com
+  password= StrongPass123
+
 > The root route (`/`) returns `404` by design. Swagger is the primary interface.
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🔐 Authentication & Authorization
+###  Authentication & Authorization
 
 * JWT-based authentication
 * Role-Based Access Control (RBAC)
@@ -28,14 +32,14 @@ This project is designed as a **realistic backend portfolio project**, following
   * **Salesperson**
   * **Customer**
 
-### 👤 User Management
+###  User Management
 
 * Secure user model with hashed passwords
 * Role assignment and permission enforcement
 * Public user creation disabled to prevent privilege escalation
 * Initial privileged users bootstrapped directly at DB level (one-time)
 
-### 📦 Product Management
+###  Product Management
 
 * **CEO & Salesperson**
 
@@ -44,7 +48,7 @@ This project is designed as a **realistic backend portfolio project**, following
 
   * Read-only access to products
 
-### 🛒 Order Management
+###  Order Management
 
 * Customers can create orders
 * CEO & Salesperson can:
@@ -56,14 +60,14 @@ This project is designed as a **realistic backend portfolio project**, following
   * Sales records
   * Audit logs
 
-### 📊 Analytics
+###  Analytics
 
 * Top-selling products
 * Lowest-selling products
 * Sales ranking using SQL window functions
 * Optimized with Redis caching
 
-### 📝 Audit Logging
+###  Audit Logging
 
 * Tracks critical actions:
 
@@ -77,14 +81,14 @@ This project is designed as a **realistic backend portfolio project**, following
   * Entity
   * Timestamp
 
-### ⚡ Performance
+###  Performance
 
 * Redis caching for analytics queries
 * Fully async database operations
 
 ---
 
-## 🏗️ Tech Stack
+##  Tech Stack
 
 * Python 3.11+
 * FastAPI
@@ -100,7 +104,7 @@ This project is designed as a **realistic backend portfolio project**, following
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 sales-backend-service/
@@ -123,7 +127,7 @@ sales-backend-service/
 
 ---
 
-## 🧠 Architecture Principles
+##  Architecture Principles
 
 * Clear separation of concerns:
 
@@ -136,7 +140,7 @@ sales-backend-service/
 
 ---
 
-## 🔑 Authentication Flow
+##  Authentication Flow
 
 1. Login via `POST /auth/login`
 2. Receive JWT access token
@@ -149,7 +153,7 @@ sales-backend-service/
 
 ---
 
-## 🗄️ Database & Migrations
+##  Database & Migrations
 
 * Async DB access via `asyncpg`
 * Alembic migrations with async → sync URL conversion
@@ -162,7 +166,7 @@ alembic upgrade head
 
 ---
 
-## 🐳 Docker
+##  Docker
 
 ### Build image
 
@@ -185,7 +189,7 @@ docker run -p 8000:8000 \
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 ```bash
 pytest
@@ -199,7 +203,7 @@ Includes:
 
 ---
 
-## 📌 Deployment
+##  Deployment
 
 * Deployed on **Render** using Docker
 * PostgreSQL provided by Render
@@ -208,7 +212,7 @@ Includes:
 
 ---
 
-## 🎯 Why This Project?
+##  Why This Project?
 
 This project demonstrates:
 
@@ -223,7 +227,7 @@ Designed specifically for **backend developer portfolios** and **production-read
 
 ---
 
-## 📌 Future Improvements
+##  Future Improvements
 
 * User self-registration (restricted)
 * Refresh tokens
@@ -233,7 +237,7 @@ Designed specifically for **backend developer portfolios** and **production-read
 
 ---
 
-## 👤 Author
+##  Author
 
 **Arun Krishna**
 
